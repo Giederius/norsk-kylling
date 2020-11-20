@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:norsk_kylling_web_app/constants.dart';
+import 'package:norsk_kylling_web_app/home/header_item.dart';
 
 class HomeView extends StatelessWidget {
   @override
@@ -16,7 +17,7 @@ class HomeView extends StatelessWidget {
               children: [
                 Icon(
                   Icons.lock_clock,
-                  color: Color.fromRGBO(253, 199, 22, 1),
+                  color: kAccentColor,
                 ),
                 SizedBox(width: 10),
                 Text(
@@ -27,12 +28,14 @@ class HomeView extends StatelessWidget {
             ),
           ),
         ),
-        Container(
-          color: Colors.white,
-          height: 144,
-          child: Row(
-            children: [],
-          ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Image.asset('assets/images/nksolvinge.png'),
+            HeaderItem(Icons.house, 'Bygget', '7290'),
+            HeaderItem(Icons.house, 'Home', 'home s'),
+            HeaderItem(Icons.house, 'Home', 'home s'),
+          ],
         ),
         Container(
           height: 100,

@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Norsk kylling',
       theme: ThemeData(
+        textTheme: TextTheme(),
         primaryColor: Colors.blue,
       ),
       home: HomeView(),
