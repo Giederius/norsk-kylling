@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:norsk_kylling_web_app/constants.dart';
 import 'package:norsk_kylling_web_app/home/header_item.dart';
+import 'package:norsk_kylling_web_app/home/logo.dart';
 
 class HomeView extends StatelessWidget {
   @override
@@ -31,10 +32,10 @@ class HomeView extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Image.asset('assets/images/nksolvinge.png'),
-            HeaderItem(Icons.house, 'Bygget', '7290'),
-            HeaderItem(Icons.house, 'Home', 'home s'),
-            HeaderItem(Icons.house, 'Home', 'home s'),
+            Logo(),
+            HeaderItem(Icons.house, 'Bygget 6', '7290 Storen'),
+            HeaderItem(Icons.phone, 'Telefon:', '72 43 05 00'),
+            HeaderItem(Icons.mail, 'E-Post:', 'sentralbord@norsk-kylling.no'),
           ],
         ),
         Container(

@@ -16,7 +16,7 @@ class HeaderItem extends StatelessWidget {
           Icon(
             iconItem,
             color: kAccentColor,
-            size: 80,
+            size: 70,
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -26,7 +26,7 @@ class HeaderItem extends StatelessWidget {
                 topText,
                 style: kHeaderBoldTextstyle,
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 15),
               Text(
                 bottomText,
                 style: kHeaderLightTextstyle,
